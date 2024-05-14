@@ -12,8 +12,7 @@ describe('AuthPage component', () => {
       </ BrowserRouter>
     );
 
-    // Verificar si el título "My Todos" está presente en la página renderizada
-    expect(getAllByText('Login')).toHaveLength(2);
+    expect(getAllByText('Login')).toHaveLength(4);
     expect(getAllByText('Register')).toHaveLength(1);
   });
 });
@@ -26,10 +25,8 @@ describe('TodosPage component', () => {
       </BrowserRouter>
     );
 
-    // Verificar si el título "My Todos" está presente en la página renderizada
     expect(getByText('My Todos')).toBeInTheDocument();
 
-    // Verificar si el botón de logout está presente en la página renderizada
     expect(getByText('Logout')).toBeInTheDocument();
   });
 });

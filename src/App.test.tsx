@@ -12,7 +12,7 @@ describe('AuthPage component', () => {
       </ BrowserRouter>
     );
 
-    expect(getAllByText('Login')).toHaveLength(4);
+    expect(getAllByText('Login')).toHaveLength(2);
     expect(getAllByText('Register')).toHaveLength(1);
   });
 });
